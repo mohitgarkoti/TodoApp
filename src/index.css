@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  background-color: #30336b;
+}
+
+.wrapper {
+  max-width: 1200px;
+  height: auto;
+  margin: 30px auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  /* height: 100vh; */
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 10px 10px 10px;
+  border-radius: 15px;
+}
+.form-and-todo-box {
+  width: 500px;
+  margin: auto;
+  height: auto;
+}
+
+.form-and-todo-box .input-and-button {
+  height: 45px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+}
+
+.form-and-todo-box .input-and-button input {
+  width: 75%;
+  height: 100%;
+  outline: none;
+  border: none;
+  text-indent: 2px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #fe9b04;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 39px;
+  /* border: 2px solid #f92c0f; */
+}
+
+.form-and-todo-box .input-and-button .button {
+  width: 8%;
+  height: 100%;
+  background-color: #fe9b04;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1px;
+}
+
+.form-and-todo-box .input-and-button .button.edit {
+  width: auto;
+  padding: 0px 10px;
+}
+
+.form-and-todo-box .input-and-button .button button {
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #fe9b04;
+  background-color: transparent;
+  color: #fff;
+}
+
+.todo {
+  margin: 30px 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.todo input {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.todo span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fe9b04;
+}
+
+.todo .edit-and-delete {
+  display: flex;
+  cursor: pointer;
+}
+
+.delete-all {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #fe9b04;
+  color: white;
+  margin-top: 30px;
+  /* margin-left: 127px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: stretch; */
+  display: flex;
+}
+.delete-all:hover {
+  background-color: rgb(182, 15, 15);
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-and-todo-box {
+    width: 100%;
+  }
+}
